@@ -70,7 +70,7 @@ header div#chamada h4 {
     margin-bottom: 55px;
     animation-name: HeaderH4-moverParaEsquerda;
     animation-duration: 3s;
-    animation-timing-function: ease-outgit ;
+    animation-timing-function: ease-out;
 }
 
 header div#chamada a {
@@ -82,6 +82,9 @@ header div#chamada a {
     border-radius: 50px;
     display: inline-block;
     background: linear-gradient(rgba(7, 140 , 49 , 55) 0% , rgba(6 , 89 , 2 , 35) 50%, rgba(6, 89 , 2, 35) 100%);
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
 }
 
 /* ------------------------------ */
@@ -119,4 +122,9 @@ section#pizza ul li {
     line-height: 1.9;
     font-size: 90%;
     text-transform: uppercase;
+}
+
+section#testemunha p.destaque {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.7);
 }
