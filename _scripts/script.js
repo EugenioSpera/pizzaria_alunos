@@ -150,7 +150,7 @@ $('footer').waypoint(function(direcao) {
     }
 
 }, {
-    offset'650px;'
+    offset:'650px;'
 
 })
 
