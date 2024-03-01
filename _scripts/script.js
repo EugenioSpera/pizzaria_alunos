@@ -84,3 +84,77 @@ $('section#testemunha').waypoint(function(direcao){
     offset: '400px'
 }
 )
+
+$('div#transicao-testemunha-plano').waypoint(function(direcao){
+    if (direcao == 'down') {
+        $('div#decoracao1').removeClass('animate__animated animate__fadeOutLeft animate__slow');
+ 
+        $('div#decoracao2').removeClass('animate__animated animate__fadeOut animate__slow');
+ 
+        $('div#decoracao3').removeClass('animate__animated animate__fadeOutRight animate__slow');
+ 
+ 
+ 
+        $('div#decoracao1').addClass('animate__animated animate__fadeInLeft animate_slow');
+ 
+        $('div#decoracao2').addClass('animate__animated animate__fadeIn animate_slow');
+ 
+        $('div#decoracao3').addClass('animate__animated animate__fadeInRight animate_slow');
+ 
+    }
+ 
+    else {
+ 
+        $('div#decoracao1').addClass('animate__animated animate__fadeOutLeft animate_slow');
+ 
+        $('div#decoracao2').addClass('animate__animated animate__fadeOut animate_slow');
+ 
+        $('div#decoracao3').addClass('animate__animated animate__fadeOutRight animate_slow');
+    }
+} , {
+ 
+    offset: '600px;'
+})
+ 
+ 
+$('section#plano-principal').waypoint(function(direcao){
+    if (direcao == 'down') {
+ 
+        $('div.planos:eq(0)').addClass('animate__animated animate__fadeInLeft animate_slower');
+ 
+        $('div.planos:eq(1)').addClass('animate__animated animate__fadeInUp animate_slower');
+ 
+        $('div.planos:eq(2)').addClass('animate__animated animate__fadeInRight animate_slower');
+    }
+    else {
+ 
+        $('div.planos:eq(0)').removeClass('animate__animated animate__fadeInLeft animate_slower');
+ 
+        $('div.planos:eq(1)').removeClass('animate__animated animate__fadeInUp animate_slower');
+ 
+        $('div.planos:eq(2)').removeClass('animate__animated animate__fadeInRight animate_slower');
+    }
+}, {
+    offset: '450px;'
+})
+
+$('footer').waypoint(function(direcao) {
+    if (direcao == 'down'){
+        $('div#mapa').addClass('animate__animated animate__fadeIn')
+        $('div#info').addClass('animate__animated animate__fadeIn')
+        $('div#pizza-rodape-decoracao').addClass('animate__animated animate__fadeIn')
+    }    else {
+        $('div#mapa').removeClass('animate__animated animate__fadeIn');
+        $('div#info').removeClass('animate__animated animate__fadeIn');
+        $('div#pizza-rodape-decoracao').removeClass('animate__animated animate__fadeIn');
+    }
+
+}, {
+    offset'650px;'
+
+})
+
+
+
+ 
+
